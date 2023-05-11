@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-todo
+  namespace: django-todo-ns
+spec:
+  containers:
+  - name: django-todo
+    image: nishantsharma312/django-todo-cicd:latest
+    ports:
+    - containerPort: 8000
+
